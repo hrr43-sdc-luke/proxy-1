@@ -14,7 +14,7 @@ app.engine('html', ejs.renderFile);
 app.get('/:id', (req, res) => {
   res.render('../public/index.html');
 });
-app.set('view engine', 'html');
+// app.set('view engine', 'html');
 
 
 app.use(proxy('/api/experiences', {target: 'http://localhost:3001/' }));
