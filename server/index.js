@@ -15,7 +15,7 @@ app.get('/:id', (req, res) => {
   res.render('../public/index.html');
 });
 
-app.use(proxy('/api/experiences', {target: 'ec2-18-217-113-225.us-east-2.compute.amazonaws.com:3001/' }));
+// app.use(proxy('/api/experiences', {target: 'http://18.217.113.225:3001/' }));
 // app.use(proxy('/photos', {target: 'http://localhost:3003/' }));
 // app.use(proxy('/calendar', {target: 'http://localhost:3005/' }));
 // app.use(proxy('/reviews', {target: 'http://localhost:3007/' }));
